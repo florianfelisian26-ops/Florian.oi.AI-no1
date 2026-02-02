@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mwombeki Company Ltd | Business Solutions</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Mwombeki Company Ltd - Professional business, technology and consultancy services in Tanzania.">
+  <meta name="keywords" content="Mwombeki, Business, Technology, Tanzania, Company">
+  <meta name="author" content="Mwombeki Company Ltd">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      background:#f9fafb;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:#0f172a;
+      color:#fff;
+      padding:15px 10%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    header h1{
+      font-size:22px;
+    }
+
+    nav a{
+      color:#fff;
+      margin-left:20px;
+      text-decoration:none;
+      font-weight:500;
+    }
+
+    nav a:hover{
+      color:#38bdf8;
+    }
+
+    /* HERO */
+    .hero{
+      min-height:90vh;
+      background:linear-gradient(to right, #0f172a, #1e293b);
+      color:white;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:40px 10%;
+    }
+
+    .hero h2{
+      font-size:48px;
+    }
+
+    .hero p{
+      margin:20px 0;
+      font-size:18px;
+      color:#cbd5e1;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 30px;
+      background:#38bdf8;
+      color:#0f172a;
+      border-radius:30px;
+      text-decoration:none;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#0ea5e9;
+    }
+
+    section{
+      padding:70px 10%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .section-title h3{
+      font-size:32px;
+      color:#0f172a;
+    }
+
+    /* SERVICES */
+    .services{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      padding:30px;
+      border-radius:15px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    /* PORTFOLIO */
+    .portfolio{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:20px;
+    }
+
+    .portfolio img{
+      width:100%;
+      border-radius:15px;
+    }
+
+    /* TESTIMONIALS */
+    .testimonials{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:20px;
+    }
+
+    .testimonial{
+      background:#0f172a;
+      color:white;
+      padding:30px;
+      border-radius:15px;
+    }
+
+    /* CONTACT */
+    form{
+      max-width:600px;
+      margin:auto;
+      display:grid;
+      gap:15px;
+    }
+
+    input, textarea{
+      padding:12px;
+      border-radius:10px;
+      border:1px solid #ccc;
+      width:100%;
+    }
+
+    button{
+      border:none;
+      cursor:pointer;
+    }
+
+    footer{
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    @media(max-width:768px){
+      .hero h2{
+        font-size:34px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Mwombeki</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div data-aos="fade-up">
+    <h2>We Build Modern Business Solutions</h2>
+    <p>Professional services, technology & innovation for your company growth.</p>
+    <a href="#contact" class="btn">Get Started</a>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-title">
+    <h3>Our Services</h3>
+  </div>
+  <div class="services">
+    <div class="card" data-aos="zoom-in">
+      <h4>Web Development</h4>
+      <p>Modern, fast and secure websites.</p>
+    </div>
+    <div class="card" data-aos="zoom-in" data-aos-delay="100">
+      <h4>Business Consulting</h4>
+      <p>Smart solutions for business growth.</p>
+    </div>
+    <div class="card" data-aos="zoom-in" data-aos-delay="200">
+      <h4>IT Solutions</h4>
+      <p>Reliable technology services.</p>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="section-title">
+    <h3>Portfolio</h3>
+  </div>
+  <div class="portfolio">
+    <img src="https://picsum.photos/500/300?1" data-aos="fade-up">
+    <img src="https://picsum.photos/500/300?2" data-aos="fade-up">
+    <img src="https://picsum.photos/500/300?3" data-aos="fade-up">
+  </div>
+</section>
+
+<section>
+  <div class="section-title">
+    <h3>Testimonials</h3>
+  </div>
+  <div class="testimonials">
+    <div class="testimonial" data-aos="fade-right">
+      <p>"Excellent service and professional team."</p>
+      <strong>- Client A</strong>
+    </div>
+    <div class="testimonial" data-aos="fade-left">
+      <p>"Our business improved a lot after working with Mwombeki."</p>
+      <strong>- Client B</strong>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-title">
+    <h3>Contact Us</h3>
+  </div>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-aos="fade-up">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+    <button class="btn" type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Mwombeki Company Ltd. All Rights Reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration:1000,
+    once:true
+  });
+</script>
+
+</body>
+</html>
